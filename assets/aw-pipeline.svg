@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="620" fill="#F7F5F0"/>
+
+  <!-- full ring, ghost -->
+  <circle cx="600" cy="270" r="150" fill="none" stroke="#DDD9CD" stroke-width="12"/>
+  <!-- 80% arc -->
+  <path d="M600,120 A150,150 0 1 1 457.3,223.7" fill="none" stroke="#101012" stroke-width="12" stroke-linecap="round"/>
+
+  <text x="600" y="262" text-anchor="middle" font-size="58" fill="#101012" font-weight="600" letter-spacing="-1">80%</text>
+  <text x="600" y="296" text-anchor="middle" font-size="12" letter-spacing="2.5" fill="#8a8a90" font-weight="500">BRAND COMPLIANCE</text>
+
+  <text x="600" y="500" text-anchor="middle" font-size="15" fill="#101012">Ship at eighty. Learn. Refine the winners to one hundred.</text>
+  <text x="117" y="572" font-size="13.5" fill="#8a8a90">Fig. 2 – The QA gate: fast enough to learn from, honest about what a test needs.</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="560" fill="#F7F5F0"/>
+
+  <rect x="170" y="60" width="860" height="440" rx="24" fill="#ffffff"/>
+
+  <text x="220" y="128" font-size="12" letter-spacing="2.5" fill="#8a8a90" font-weight="500">T1 · HYPOTHESIS</text>
+
+  <g font-size="17" fill="#101012">
+    <text x="220" y="185" font-size="12" letter-spacing="2" fill="#8a8a90" font-weight="500">WE OBSERVE</text>
+    <text x="220" y="212">Two products side by side; most users hesitate and leave</text>
+
+    <text x="220" y="266" font-size="12" letter-spacing="2" fill="#8a8a90" font-weight="500">BY CHANGING</text>
+    <text x="220" y="293">Show PLUS only; offer the single-order product as an exit intent</text>
+
+    <text x="220" y="347" font-size="12" letter-spacing="2" fill="#8a8a90" font-weight="500">WE EXPECT</text>
+    <text x="220" y="374">Payment-form conversion to grow without losing total revenue</text>
+  </g>
+
+  <rect x="220" y="416" width="196" height="36" rx="18" fill="#F1EFE8"/>
+  <text x="318" y="439" text-anchor="middle" font-size="12" letter-spacing="1.5" fill="#3f3f44" font-weight="500">PARADOX OF CHOICE</text>
+
+  <text x="170" y="540" font-size="13.5" fill="#8a8a90">Fig. 2 – Every experiment starts as the same card: no hypothesis, no test.</text>
+</svg>

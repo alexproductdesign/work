@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="900" fill="#EFEDE6"/>
+
+  <g transform="translate(0,-146)">
+
+  <!-- base pill on the ground -->
+  <g transform="rotate(-2 600 712)">
+    <rect x="390" y="664" width="420" height="96" rx="48" fill="#ffffff" stroke="#e8e6e1" stroke-width="2"/>
+    <text x="600" y="728" text-anchor="middle" font-size="40" font-weight="500" fill="#101012">2 weeks → 2 days</text>
+  </g>
+
+  <!-- lime x7 pill leaning between the timer and the base pill -->
+  <g transform="rotate(22 708 596)">
+    <rect x="614" y="548" width="188" height="96" rx="48" fill="#E1FF53"/>
+    <text x="708" y="612" text-anchor="middle" font-size="44" font-weight="500" fill="#101012">×7</text>
+  </g>
+
+  <!-- timer badge resting on the base pill -->
+  <g>
+    <circle cx="540" cy="550" r="118" fill="#ffffff" stroke="#e8e6e1" stroke-width="2"/>
+    <g stroke="#101012" stroke-width="8" fill="none" stroke-linecap="round">
+      <circle cx="540" cy="562" r="58"/>
+      <path d="M525 482 h30"/>
+      <path d="M540 482 v14"/>
+      <path d="M592 496 l14 14"/>
+      <path d="M540 562 L572 534"/>
+    </g>
+  </g>
+  </g>
+</svg>

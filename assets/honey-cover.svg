@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="900" fill="#EFEDE6"/>
+
+  <!-- honeycomb cluster, pill-language: white cells, one lime certified cell -->
+  <g transform="translate(0,-16)">
+
+    <!-- top cell -->
+    <path d="M600 236 L697 292 L697 404 L600 460 L503 404 L503 292 Z" fill="#ffffff" stroke="#e8e6e1" stroke-width="2"/>
+
+    <!-- left cell -->
+    <path d="M497 414 L594 470 L594 582 L497 638 L400 582 L400 470 Z" fill="#ffffff" stroke="#e8e6e1" stroke-width="2"/>
+    <text x="497" y="540" text-anchor="middle" font-size="36" font-weight="500" fill="#101012">B2C</text>
+
+    <!-- right cell: certified -->
+    <path d="M703 414 L800 470 L800 582 L703 638 L606 582 L606 470 Z" fill="#E1FF53"/>
+    <g stroke="#101012" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M668 526 L694 552 L742 496"/>
+    </g>
+
+    <text x="600" y="362" text-anchor="middle" font-size="36" font-weight="500" fill="#101012">B2B</text>
+
+  </g>
+</svg>

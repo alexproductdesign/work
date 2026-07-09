@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="360" fill="#F7F5F0"/>
+
+  <g font-size="15" fill="#101012">
+    <rect x="52" y="120" width="220" height="62" rx="31" fill="none" stroke="#101012" stroke-width="1.2"/>
+    <text x="162" y="147" text-anchor="middle">Purchase in an</text>
+    <text x="162" y="167" text-anchor="middle">online shop</text>
+
+    <rect x="332" y="120" width="220" height="62" rx="31" fill="none" stroke="#101012" stroke-width="1.2"/>
+    <text x="442" y="157" text-anchor="middle">Guarantee card</text>
+
+    <rect x="612" y="108" width="250" height="86" rx="28" fill="#E1FF53"/>
+    <text x="737" y="145" text-anchor="middle" font-weight="600">Payment form</text>
+    <text x="737" y="169" text-anchor="middle" font-size="12.5" fill="#3d3f2e">the revenue lever · 86 tests</text>
+
+    <rect x="922" y="120" width="226" height="62" rx="31" fill="none" stroke="#101012" stroke-width="1.2"/>
+    <text x="1035" y="157" text-anchor="middle">PLUS protection</text>
+  </g>
+
+  <g stroke="#101012" stroke-width="1.2" fill="none">
+    <path d="M272 151h48m0 0-7-5m7 5-7 5"/>
+    <path d="M552 151h48m0 0-7-5m7 5-7 5"/>
+    <path d="M862 151h48m0 0-7-5m7 5-7 5"/>
+  </g>
+
+  <text x="52" y="290" font-size="13.5" fill="#8a8a90">Fig. 1 – Where the traffic comes from: every visitor has just bought something and holds a guarantee card.</text>
+</svg>

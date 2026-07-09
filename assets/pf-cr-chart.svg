@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="560" fill="#F7F5F0"/>
+
+  <!-- gridlines -->
+  <g stroke="#E4E1D6" stroke-width="1">
+    <line x1="120" y1="420" x2="1080" y2="420"/>
+    <line x1="120" y1="330" x2="1080" y2="330"/>
+    <line x1="120" y1="240" x2="1080" y2="240"/>
+    <line x1="120" y1="150" x2="1080" y2="150"/>
+  </g>
+  <g font-size="12.5" fill="#8a8a90">
+    <text x="100" y="425" text-anchor="end">6%</text>
+    <text x="100" y="335" text-anchor="end">8%</text>
+    <text x="100" y="245" text-anchor="end">11%</text>
+    <text x="100" y="155" text-anchor="end">13%</text>
+  </g>
+
+  <!-- area -->
+  <path d="M120,420 L440,372 L760,262 L1080,150 L1080,470 L120,470 Z" fill="#E1FF53" opacity="0.35"/>
+  <!-- line -->
+  <path d="M120,420 L440,372 L760,262 L1080,150" fill="none" stroke="#101012" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- points -->
+  <g fill="#101012">
+    <circle cx="120" cy="420" r="5"/>
+    <circle cx="440" cy="372" r="5"/>
+    <circle cx="760" cy="262" r="5"/>
+  </g>
+  <circle cx="1080" cy="150" r="8" fill="#E1FF53" stroke="#101012" stroke-width="2.5"/>
+
+  <text x="120" y="398" font-size="14" fill="#101012" font-weight="500">~6%</text>
+  <text x="1080" y="126" text-anchor="end" font-size="20" fill="#101012" font-weight="600">~13%</text>
+
+  <g font-size="12.5" fill="#8a8a90">
+    <text x="120" y="452" text-anchor="middle">2023</text>
+    <text x="440" y="452" text-anchor="middle">2024</text>
+    <text x="760" y="452" text-anchor="middle">2025</text>
+    <text x="1080" y="452" text-anchor="middle">2026</text>
+  </g>
+
+  <text x="120" y="520" font-size="13.5" fill="#8a8a90">Fig. 3 – No single experiment doubled the conversion rate. The system did.</text>
+</svg>

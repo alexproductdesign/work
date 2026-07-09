@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="900" fill="#EFEDE6"/>
+
+  <g transform="rotate(-9 600 470)">
+    <!-- halo blob -->
+    <circle cx="760" cy="330" r="150" fill="#E1FF53"/>
+
+    <!-- sparks -->
+    <g stroke="#101012" stroke-width="12" stroke-linecap="round">
+      <line x1="790" y1="255" x2="805" y2="215"/>
+      <line x1="845" y1="290" x2="882" y2="266"/>
+      <line x1="862" y1="352" x2="906" y2="348"/>
+    </g>
+
+    <!-- gauge: lime, thick black outline -->
+    <path d="M370 590 A 230 230 0 0 1 830 590 L 370 590 Z"
+          fill="#E1FF53" stroke="#101012" stroke-width="14" stroke-linejoin="round"/>
+
+    <!-- ticks -->
+    <g stroke="#101012" stroke-width="11" stroke-linecap="round">
+      <line x1="431" y1="493" x2="466" y2="513"/>
+      <line x1="512" y1="412" x2="532" y2="447"/>
+      <line x1="600" y1="382" x2="600" y2="422"/>
+      <line x1="688" y1="412" x2="668" y2="447"/>
+      <line x1="769" y1="493" x2="734" y2="513"/>
+    </g>
+
+    <!-- needle -->
+    <line x1="600" y1="590" x2="737" y2="480" stroke="#101012" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="600" cy="590" r="24" fill="#101012"/>
+
+    <!-- 7x on the dial -->
+    <text x="480" y="565" font-size="76" font-weight="700" fill="#101012">7×</text>
+  </g>
+
+  <!-- caption -->
+  <text x="600" y="750" text-anchor="middle" font-size="34" font-weight="600" fill="#101012" letter-spacing="1">7× faster test cycle</text>
+</svg>

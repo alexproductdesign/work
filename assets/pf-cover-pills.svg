@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="900" fill="#EFEDE6"/>
+
+  <g transform="translate(-80,-30)">
+
+  <!-- short bar: 6% -->
+  <rect x="460" y="480" width="130" height="220" rx="65" fill="#ffffff" stroke="#e8e6e1" stroke-width="2"/>
+  <text x="525" y="560" text-anchor="middle" font-size="38" font-weight="500" fill="#101012">6%</text>
+
+  <!-- tall bar: 13% -->
+  <rect x="640" y="260" width="130" height="440" rx="65" fill="#E1FF53"/>
+  <text x="705" y="340" text-anchor="middle" font-size="38" font-weight="500" fill="#101012">13%</text>
+
+  <!-- x2 pill leaning against the tall bar -->
+  <g transform="rotate(20 838 646)">
+    <rect x="763" y="606" width="150" height="80" rx="40" fill="#101012"/>
+    <text x="838" y="660" text-anchor="middle" font-size="36" font-weight="500" fill="#FFFDF2">×2</text>
+  </g>
+
+  </g>
+</svg>

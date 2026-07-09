@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="900" fill="#EFEDE6"/>
+
+  <!-- speed whoosh -->
+  <g stroke="#101012" stroke-width="9" stroke-linecap="round">
+    <line x1="220" y1="440" x2="305" y2="440"/>
+    <line x1="185" y1="505" x2="290" y2="505"/>
+    <line x1="225" y1="570" x2="300" y2="570"/>
+  </g>
+
+  <!-- gauge body: black dome character -->
+  <path d="M330 640 A 270 270 0 0 1 870 640 Z" fill="#101012"/>
+
+  <!-- ticks -->
+  <g stroke="#EFEDE6" stroke-width="6" stroke-linecap="round">
+    <line x1="384.9" y1="601.7" x2="357.4" y2="596.9"/>
+    <line x1="406.5" y1="527.5" x2="382.1" y2="513.4"/>
+    <line x1="451.4" y1="465.1" x2="432.3" y2="447.2"/>
+    <line x1="522.4" y1="418.1" x2="508.8" y2="393.5"/>
+    <line x1="600.0" y1="405.0" x2="600.0" y2="377.0"/>
+    <line x1="677.6" y1="418.1" x2="691.2" y2="393.5"/>
+    <line x1="748.6" y1="465.1" x2="767.7" y2="447.2"/>
+  </g>
+
+  <!-- lime end zone -->
+  <path d="M793.5 527.5 A 225 225 0 0 1 825 640" fill="none" stroke="#E1FF53" stroke-width="42" stroke-linecap="round"/>
+
+  <!-- needle into the lime zone -->
+  <line x1="600" y1="640" x2="795" y2="565" stroke="#FFFDF2" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="600" cy="640" r="17" fill="#FFFDF2"/>
+
+  <!-- face -->
+  <ellipse cx="565" cy="500" rx="56" ry="46" fill="#FFFDF2"/>
+  <circle cx="545" cy="490" r="6" fill="#101012"/>
+  <circle cx="585" cy="490" r="6" fill="#101012"/>
+  <path d="M549 515 Q565 530 581 515" stroke="#101012" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- legs -->
+  <g stroke="#101012" stroke-width="9" stroke-linecap="round" fill="none">
+    <path d="M540 642 L530 745 L502 745"/>
+    <path d="M660 642 L670 745 L698 745"/>
+  </g>
+
+  <!-- 7x chip -->
+  <g>
+    <rect x="835" y="430" width="196" height="58" rx="29" fill="#E1FF53" stroke="#101012" stroke-width="4"/>
+    <text x="933" y="469" text-anchor="middle" font-size="30" font-weight="600" fill="#101012">7× faster</text>
+  </g>
+</svg>

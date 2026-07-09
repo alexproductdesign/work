@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A/B Test Workflow – Alexandra Rott</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260708m">
+</head>
+<body class="theme-ivory">
+
+  <header class="site-header">
+    <a class="monogram" href="index.html" aria-label="Home">AR</a>
+    <nav class="nav-pill" aria-label="Main">
+      <a href="index.html#work" class="nav-link is-active">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Work
+      </a>
+      <a class="nav-link coming-soon">
+        <svg viewBox="0 0 24 24" class="nav-icon"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="9" r="1.6" fill="currentColor"/><path d="M4 17l5-5 4 4 3-3 4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Playground
+      </a>
+      <a href="about.html" class="nav-link">
+        <svg viewBox="0 0 24 24" class="nav-icon"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9.2" cy="10" r="1.2" fill="currentColor"/><circle cx="14.8" cy="10" r="1.2" fill="currentColor"/><path d="M8.5 14.5c.9 1.2 2.1 1.8 3.5 1.8s2.6-.6 3.5-1.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        About
+      </a>
+      <a class="nav-link coming-soon">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M7 3.5h7l4 4V20a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 20V5A1.5 1.5 0 0 1 7.5 3.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.5 12h5M9.5 15.5h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        CV
+      </a>
+    </nav>
+    <a class="mail-button" href="mailto:workmail.alexandra@gmail.com" aria-label="Email me">
+      <svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 7.5l7.5 5.5 7.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+  <main class="case">
+
+    <!-- 1. hero -->
+    <section class="case-hero">
+      <h1 class="case-title serif">Conversion tests: from two weeks to two days</h1>
+      <p class="case-intro">Every conversion test at Trusted Shops waited for the same thing: a developer with room in a sprint. When Figma Make shipped in May 2025, I rebuilt the workflow around AI design tools so the people with the ideas could build the tests themselves – with a designer QA gate keeping the brand safe.</p>
+
+      <dl class="case-facts">
+        <div><dt class="mono">Role</dt><dd>Owner · end-to-end</dd></div>
+        <div><dt class="mono">Team</dt><dd>Solo, conversion managers as early adopters</dd></div>
+        <div><dt class="mono">Timeline</dt><dd>Since May 2025</dd></div>
+        <div><dt class="mono">Stack</dt><dd>Figma Make · Kameleoon</dd></div>
+      </dl>
+    </section>
+
+    <!-- 2. hero figure -->
+    <div class="case-media case-media-hero is-img">
+      <img src="assets/aw-cycle-alt.svg?v=1" alt="Before: idea, design spec, wait for a dev sprint, build, QA, go live. After: idea, build in Figma Make, designer QA, go live." loading="lazy">
+    </div>
+
+    <!-- 3. impact strip -->
+    <section class="case-impact">
+      <div class="impact-item">
+        <p class="impact-num serif">–85%</p>
+        <p class="impact-label">Cycle time – idea to live test: two weeks → two days</p>
+      </div>
+      <div class="impact-item">
+        <p class="impact-num serif">No devs</p>
+        <p class="impact-label">Tests ship without engineering in the loop</p>
+      </div>
+      <div class="impact-item">
+        <p class="impact-num serif">Org-wide</p>
+        <p class="impact-label">Adoption – the workflow spread beyond my team</p>
+      </div>
+    </section>
+
+    <!-- 4. the problem -->
+    <section class="case-section">
+      <p class="case-kicker mono">Problem</p>
+      <div class="case-body">
+        <h2>The bottleneck wasn't the thinking. It was the queue</h2>
+        <p>Every conversion test moved through the same chain: someone has an idea, a designer mocks it up, a developer builds it inside a sprint, the test goes live. Four steps – and one of them set the pace for all the others. The developer step owned the calendar: not because the work was hard (most tests were small, lightweight changes), but because it had to wait for a sprint to have room.</p>
+        <p>For a team whose whole job is learning fast, that's a strange place to be.</p>
+        <p class="case-quote serif">The slowest part of a conversion test was never the design. It was waiting for someone else to build it.</p>
+      </div>
+    </section>
+
+    <!-- 5. the approach -->
+    <section class="case-section">
+      <p class="case-kicker mono">Approach</p>
+      <div class="case-body">
+        <h2>Testing Figma Make on release day, with one question</h2>
+        <p>I'd been watching AI design tools for a while – half-curious, half-skeptical. When Figma Make shipped in May 2025, I tested it the same day with one question: if our design system is wired in, is the output good enough for a designer or a conversion manager to visualize their own idea on our codebase – and launch a test without a developer in the loop?</p>
+        <p>The answer was close enough to yes that I rebuilt the workflow around it. Not as a faster way to make mockups – as a way to move production out of the bottleneck entirely and hand it to the people who have the ideas in the first place.</p>
+        <p>For the pilot I paired with one of our conversion managers on an idea that had been sitting on the shelf: a comparison table for the pricing page. Tables are tedious to build in HTML and CSS – the perfect test object for a developer-independent workflow.</p>
+      </div>
+    </section>
+
+    <!-- 6. the method -->
+    <section class="case-section">
+      <p class="case-kicker mono">Method</p>
+      <div class="case-body">
+        <h2>Two decisions did the heavy lifting</h2>
+        <p><strong>Templates.</strong> Rather than letting everyone generate a random version of a page per test, I built 1:1 replicas of our live pages as Figma Make templates. Each one bakes in the instructions that keep output consistent: automatic test naming, export conventions, role awareness – and a prompt that makes Figma Make export pure HTML and CSS for Kameleoon, our A/B testing tool, instead of its default React. Only I manage the templates; everyone else works inside them. That's what keeps a fast workflow from turning into a mess.</p>
+        <p><strong>The 80% rule.</strong> In experimentation, speed of learning matters more than pixel perfection. So we ship at a minimum of 80% brand compliance after designer QA – enough that nothing embarrassing goes out – and refine the winners to 100% before they roll out for good. The 80 isn't a corner cut under pressure; it's a deliberate gate, monitored daily.</p>
+      </div>
+      <div class="case-media is-img">
+        <img src="assets/aw-pipeline.svg" alt="The 80% brand-compliance gate: ship at eighty, refine winners to one hundred" loading="lazy">
+      </div>
+    </section>
+
+    <!-- 7. outcome -->
+    <section class="case-section">
+      <p class="case-kicker mono">Outcome</p>
+      <div class="case-body">
+        <h2>Two days max – and a workflow that outgrew its team</h2>
+        <p>Idea to live test went from up to two weeks to a maximum of two days. Tests ship without engineering, and conversion managers can visualize their own ideas and hand design a wireframe instead of a request.</p>
+        <p>The part I didn't plan for was what happened next: PMs in other departments picked up Figma Make, other designers followed, and the templates quietly became a single source of truth for how tests start.</p>
+        <p>My own role shifted with it – from executing designs to maintaining the system around them: owning the templates, holding the QA gate, deciding what ships at 80% and what earns the full pass. That's the part of the job that compounds.</p>
+      </div>
+    </section>
+
+    <!-- 8. limitations & next -->
+    <section class="case-section">
+      <p class="case-kicker mono">Next</p>
+      <div class="case-body">
+        <h2>Where the workflow goes from here</h2>
+      </div>
+      <div class="experiments">
+        <div class="experiment-row">
+          <p class="mono">Next</p>
+          <p>Moving the pipeline onto Claude: repo access anchors templates to the real codebase, and it writes native HTML and CSS – exactly what Kameleoon needs.</p>
+        </div>
+        <div class="experiment-row">
+          <p class="mono">Next</p>
+          <p>Measure the pipeline: tests per quarter, time-to-live and win rate would turn the –85% from an estimate into a tracked metric.</p>
+        </div>
+        <div class="experiment-row">
+          <p class="mono">Next</p>
+          <p>A template contribution model: today I'm the only one who builds templates – a clean bottleneck, but still a bottleneck.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. next project -->
+    <a class="case-next" href="case-smart-insights.html">
+      <p class="mono">Next project</p>
+      <p class="case-next-name serif">Smart Insights →</p>
+    </a>
+
+  </main>
+
+  <footer class="dome-footer">
+    <div class="dome-bg" aria-hidden="true"></div>
+    <div class="dome-eyes" aria-hidden="true">
+      <span class="d-eye"><span class="d-pupil"></span></span>
+      <span class="d-eye"><span class="d-pupil"></span></span>
+    </div>
+    <div class="dome-content">
+      <p class="dome-title">You've scrolled this far.<br>That's a strong engagement signal.</p>
+      <button class="copy-email dome-copy js-copy-email" data-email="workmail.alexandra@gmail.com">
+        Copy email
+        <svg viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="12" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.5 5.5v-1a1 1 0 0 0-1-1h-10a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h1" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+      </button>
+      <div class="dome-bottom mono"><span>© 2026 Alexandra Rott</span><span>Built with love</span></div>
+    </div>
+  </footer>
+
+  <script src="js/footer.js?v=20260708m"></script>
+  <script src="js/coming-soon.js?v=20260708m"></script>
+  <script src="js/reveal.js?v=20260708m"></script>
+  <script data-goatcounter="https://alexproductb2b.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

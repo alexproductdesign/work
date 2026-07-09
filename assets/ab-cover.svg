@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="900" fill="#EFEDE6"/>
+
+  <!-- Variant A: droopy blob -->
+  <g>
+    <g fill="#101012">
+      <circle cx="370" cy="450" r="72"/>
+      <circle cx="470" cy="455" r="72"/>
+      <circle cx="420" cy="398" r="76"/>
+      <circle cx="420" cy="515" r="82"/>
+      <circle cx="348" cy="520" r="58"/>
+      <circle cx="492" cy="522" r="58"/>
+      <!-- droopy ear-bumps -->
+      <ellipse cx="322" cy="392" rx="34" ry="46" transform="rotate(24 322 392)"/>
+      <ellipse cx="518" cy="392" rx="34" ry="46" transform="rotate(-24 518 392)"/>
+    </g>
+    <!-- legs -->
+    <g stroke="#101012" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M398 592 L390 700 L362 700"/>
+      <path d="M448 592 L456 700 L484 700"/>
+    </g>
+    <!-- face -->
+    <ellipse cx="420" cy="452" rx="58" ry="48" fill="#FFFDF2"/>
+    <circle cx="399" cy="444" r="6" fill="#101012"/>
+    <circle cx="441" cy="444" r="6" fill="#101012"/>
+    <path d="M404 474 L436 474" stroke="#101012" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Variant B: perky blob with a winner flag -->
+  <g>
+    <!-- arm + flag behind body -->
+    <path d="M868 420 C 905 385, 925 340, 930 290" stroke="#101012" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <path d="M930 290 L930 196" stroke="#101012" stroke-width="9" stroke-linecap="round"/>
+    <path d="M930 200 L1042 226 L930 254 Z" fill="#E1FF53" stroke="#101012" stroke-width="8" stroke-linejoin="round"/>
+    <g fill="#101012">
+      <circle cx="740" cy="425" r="74"/>
+      <circle cx="840" cy="425" r="74"/>
+      <circle cx="790" cy="368" r="78"/>
+      <circle cx="790" cy="490" r="84"/>
+      <circle cx="716" cy="495" r="60"/>
+      <circle cx="864" cy="495" r="60"/>
+      <!-- perky ear-bumps -->
+      <ellipse cx="706" cy="340" rx="34" ry="50" transform="rotate(-26 706 340)"/>
+      <ellipse cx="874" cy="340" rx="34" ry="50" transform="rotate(26 874 340)"/>
+    </g>
+    <!-- legs -->
+    <g stroke="#101012" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M768 570 L760 690 L732 690"/>
+      <path d="M818 570 L826 690 L854 690"/>
+    </g>
+    <!-- face -->
+    <ellipse cx="790" cy="428" rx="58" ry="48" fill="#FFFDF2"/>
+    <circle cx="769" cy="418" r="6" fill="#101012"/>
+    <circle cx="811" cy="418" r="6" fill="#101012"/>
+    <path d="M772 444 Q790 460 808 444" stroke="#101012" stroke-width="5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- labels -->
+  <g font-size="26" font-weight="600">
+    <rect x="392" y="752" width="56" height="46" rx="23" fill="none" stroke="#101012" stroke-width="3"/>
+    <text x="420" y="785" text-anchor="middle" fill="#101012">A</text>
+    <rect x="762" y="752" width="56" height="46" rx="23" fill="#101012"/>
+    <text x="790" y="785" text-anchor="middle" fill="#FFFDF2">B</text>
+  </g>
+</svg>

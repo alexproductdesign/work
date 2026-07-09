@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="900" fill="#EFEDE6"/>
+
+  <text x="108" y="252" font-size="14" letter-spacing="3" fill="#8a8a90" font-weight="500">IDEA → LIVE TEST</text>
+
+  <!-- 14 day cells: 2 used, 12 given back -->
+  <g>
+    <rect x="108" y="294" width="120" height="120" rx="26" fill="#101012"/>
+    <rect x="252" y="294" width="120" height="120" rx="26" fill="#101012"/>
+    <rect x="396" y="294" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+    <rect x="540" y="294" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+    <rect x="684" y="294" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+    <rect x="828" y="294" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+    <rect x="972" y="294" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+
+    <rect x="108" y="438" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+    <rect x="252" y="438" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+    <rect x="396" y="438" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+    <rect x="540" y="438" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+    <rect x="684" y="438" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+    <rect x="828" y="438" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+    <rect x="972" y="438" width="120" height="120" rx="26" fill="none" stroke="#B9B5A9" stroke-width="1.4"/>
+  </g>
+
+  <text x="1092" y="642" text-anchor="end" font-size="14" letter-spacing="3" fill="#101012" font-weight="500">2 OF 14 DAYS</text>
+</svg>
