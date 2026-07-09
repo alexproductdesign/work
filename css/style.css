@@ -1248,10 +1248,11 @@ a { color: inherit; text-decoration: none; }
 .reveal.is-in { opacity: 1; transform: none; }
 
 /* chart draw-on wipes (applied to <img data-anim="...">) */
-[data-anim="wipe-lr"] { clip-path: inset(0 100% 0 0); transition: clip-path 1.1s cubic-bezier(0.22,0.61,0.36,1); }
-[data-anim="wipe-lr"].anim-run { clip-path: inset(0 0 0 0); }
-[data-anim="wipe-up"] { clip-path: inset(100% 0 0 0); transition: clip-path 1s cubic-bezier(0.22,0.61,0.36,1); }
-[data-anim="wipe-up"].anim-run { clip-path: inset(0 0 0 0); }
+/* fail-open: charts are visible by default; JS opts them into the wipe */
+[data-anim].anim-pending[data-anim="wipe-lr"] { clip-path: inset(0 100% 0 0); }
+[data-anim].anim-pending[data-anim="wipe-up"] { clip-path: inset(100% 0 0 0); }
+[data-anim] { transition: clip-path 1.1s cubic-bezier(0.22,0.61,0.36,1); }
+[data-anim].anim-run { clip-path: inset(0 0 0 0) !important; }
 
 /* growing underline on text links */
 .link-underline, .case-body a, .about-body a:not(.icon-button) {
@@ -1285,19 +1286,20 @@ a { color: inherit; text-decoration: none; }
 .case-next-name .next-arrow { display: inline-block; transition: transform 0.3s cubic-bezier(0.22,0.61,0.36,1); }
 .case-next:hover .next-arrow { transform: translateX(8px); }
 
-/* approach: numbered process cards */
-.process-grid {
+/* approach: editorial numbered steps */
+.process-list {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.process-step {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  grid-template-columns: 48px 1fr;
+  gap: 18px;
+  align-items: start;
 }
-.process-card {
-  background: #fff;
-  border-radius: 20px;
-  padding: 26px 28px 24px;
-}
-.process-card:last-child { grid-column: 1 / -1; }
-.process-card .p-num {
+.process-step .p-num {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1309,18 +1311,27 @@ a { color: inherit; text-decoration: none; }
   font-size: 12px;
   font-weight: 600;
   color: #101012;
+  margin-top: 2px;
 }
-.process-card h3 {
-  margin: 14px 0 8px;
+.process-step h3 {
   font-size: 16.5px;
   font-weight: 600;
   letter-spacing: -0.01em;
+  margin-bottom: 6px;
 }
-.process-card p {
-  font-size: 14.5px;
-  line-height: 1.6;
+.process-step p {
+  font-size: 15px;
+  line-height: 1.62;
   color: var(--ink-soft);
 }
-@media (max-width: 860px) {
-  .process-grid { grid-template-columns: 1fr; }
+
+/* heading block above the experiment table */
+.table-intro { margin: 56px 0 0; }
+.table-intro h3 {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
 }
+.table-intro p { font-size: 15.5px; color: var(--ink-soft); }
+.table-intro + .table-scroll { margin-top: 22px; }

@@ -46,19 +46,41 @@
   }
 
   // ---------- 2 + 3: count-up numbers & chart wipes (no fade) ----------
+  const charts = Array.from(document.querySelectorAll('[data-anim]'));
+  charts.forEach(function (c) { c.classList.add('anim-pending'); });
+
+  function runChart(c) {
+    if (c.classList.contains('anim-run')) return;
+    c.classList.add('anim-run');
+  }
+
   const watch = [];
   document.querySelectorAll('.impact-num').forEach(function (n) { watch.push(n); });
-  document.querySelectorAll('[data-anim]').forEach(function (c) { watch.push(c); });
-  if (watch.length) {
+  charts.forEach(function (c) { watch.push(c); });
+  if (watch.length && 'IntersectionObserver' in window) {
     const io2 = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (!e.isIntersecting) return;
         const el = e.target;
         if (el.classList.contains('impact-num')) countUp(el);
-        if (el.dataset && el.dataset.anim) el.classList.add('anim-run');
+        if (el.dataset && el.dataset.anim) runChart(el);
         io2.unobserve(el);
       });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
     watch.forEach(function (el) { io2.observe(el); });
   }
+
+  // belt-and-braces: run charts once they enter the viewport per scroll math
+  function chartScrollCheck() {
+    const vh = window.innerHeight;
+    charts.forEach(function (c) {
+      const r = c.getBoundingClientRect();
+      if (r.top < vh * 0.92 && r.bottom > 0) runChart(c);
+    });
+    if (charts.every(function (c) { return c.classList.contains('anim-run'); })) {
+      window.removeEventListener('scroll', chartScrollCheck);
+    }
+  }
+  window.addEventListener('scroll', chartScrollCheck, { passive: true });
+  chartScrollCheck();
 })();
