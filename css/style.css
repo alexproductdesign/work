@@ -1046,14 +1046,15 @@ a { color: inherit; text-decoration: none; }
 .stories {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0;
+  max-width: 640px;
 }
 
-.story {
-  background: var(--card);
-  border-radius: 20px;
-  padding: 34px 38px 30px;
-}
+/* stories interleaved with full-width illustrations */
+.case-section > .story { max-width: 640px; }
+.story-media { margin: 28px 0 48px; }
+
+.story { padding: 8px 0 0; }
 
 .story-tags {
   display: flex;
@@ -1094,7 +1095,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 860px) {
-  .story { padding: 24px 20px; }
 }
 
 /* bulleted list inside case body */
@@ -1254,7 +1254,7 @@ a { color: inherit; text-decoration: none; }
 [data-anim="wipe-up"].anim-run { clip-path: inset(0 0 0 0); }
 
 /* growing underline on text links */
-.link-underline, .case-next-name, .case-body a, .about-body a:not(.icon-button) {
+.link-underline, .case-body a, .about-body a:not(.icon-button) {
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 0% 1.5px;
   background-position: 0 100%;
@@ -1262,7 +1262,7 @@ a { color: inherit; text-decoration: none; }
   transition: background-size 0.35s cubic-bezier(0.22,0.61,0.36,1);
   padding-bottom: 1px;
 }
-.link-underline:hover, .case-next:hover .case-next-name,
+.link-underline:hover,
 .case-body a:hover, .about-body a:not(.icon-button):hover { background-size: 100% 1.5px; }
 
 /* footer eyes blink on copy */
@@ -1273,4 +1273,54 @@ a { color: inherit; text-decoration: none; }
   .reveal { opacity: 1 !important; transform: none !important; }
   [data-anim] { clip-path: none !important; }
   .dome-eyes.is-blinking .d-eye { animation: none; }
+}
+
+/* evolution list: word labels need a wider first column */
+.experiments.labels-wide .experiment-row { grid-template-columns: 148px 1fr; }
+@media (max-width: 860px) {
+  .experiments.labels-wide .experiment-row { grid-template-columns: 1fr; }
+}
+
+/* next-project: arrow nudges right on hover (card lift stays) */
+.case-next-name .next-arrow { display: inline-block; transition: transform 0.3s cubic-bezier(0.22,0.61,0.36,1); }
+.case-next:hover .next-arrow { transform: translateX(8px); }
+
+/* approach: numbered process cards */
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.process-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 26px 28px 24px;
+}
+.process-card:last-child { grid-column: 1 / -1; }
+.process-card .p-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #E1FF53;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: #101012;
+}
+.process-card h3 {
+  margin: 14px 0 8px;
+  font-size: 16.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.process-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+@media (max-width: 860px) {
+  .process-grid { grid-template-columns: 1fr; }
 }
