@@ -125,6 +125,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nav-link:hover { background: #f1efe9; }
+/* Playground temporarily hidden (all screens) */
+.nav-hide-mobile { display: none; }
 
 .nav-icon { width: 18px; height: 18px; }
 
