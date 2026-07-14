@@ -5,7 +5,14 @@
   const stage = document.getElementById('pill-stage');
   if (!stage) return;
 
-  const els = Array.from(stage.querySelectorAll('.pill'));
+  // on narrow screens, drop the longest pills so the pile isn't overcrowded
+  const els = Array.from(stage.querySelectorAll('.pill')).filter(function (el) {
+    if (window.innerWidth <= 860 && el.hasAttribute('data-mhide')) {
+      el.style.display = 'none';
+      return false;
+    }
+    return true;
+  });
 
   // Wait for webfonts so pill widths are measured correctly (with a
   // timeout fallback in case the fonts CDN is slow or unreachable).
