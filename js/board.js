@@ -25,6 +25,23 @@
   const board = document.getElementById('board');
   if (!board) return;
 
+  // ---- entrance: cards fade up with a stagger on load ----
+  // (Web Animations API so it releases after finishing and never
+  //  fights the drag transform set inline by the handlers below.)
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const cards = board.querySelectorAll('.bc');
+    cards.forEach(function (card, i) {
+      const r = (card.style.getPropertyValue('--r') || '0deg').trim();
+      card.animate(
+        [
+          { opacity: 0, transform: 'translateY(16px) rotate(' + r + ')' },
+          { opacity: 1, transform: 'translateY(0) rotate(' + r + ')' }
+        ],
+        { duration: 500, delay: 80 + i * 55, easing: 'cubic-bezier(0.4, 0, 0.2, 1)', fill: 'backwards' }
+      );
+    });
+  }
+
   board.querySelectorAll('.bc').forEach(function (card) {
     let sx = 0, sy = 0, dx = 0, dy = 0, moved = false;
     // links would otherwise start a native drag and swallow pointermove
