@@ -29,18 +29,33 @@
   // (Web Animations API so it releases after finishing and never
   //  fights the drag transform set inline by the handlers below.)
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    // mobile lays the board out as a static vertical column (≤900px):
+    // a springy scale/rotate fly-in reads as a harsh bounce there, so use
+    // a gentle fade-up instead. The playful fly-in stays on wider screens.
+    const mobile = window.matchMedia('(max-width: 900px)').matches;
     const cards = board.querySelectorAll('.bc');
     cards.forEach(function (card, i) {
       const rNum = parseFloat(card.style.getPropertyValue('--r')) || 0;
-      const startRot = (rNum + 10) + 'deg';   // extra tilt that settles to --r
-      const endRot = rNum + 'deg';
-      card.animate(
-        [
-          { opacity: 0, transform: 'translateY(34px) scale(0.5) rotate(' + startRot + ')' },
-          { opacity: 1, transform: 'translateY(0) scale(1) rotate(' + endRot + ')' }
-        ],
-        { duration: 620, delay: 90 + i * 65, easing: 'cubic-bezier(0.34, 1.45, 0.5, 1)', fill: 'backwards' }
-      );
+      if (mobile) {
+        const r = (rNum / 2) + 'deg';   // matches the halved tilt of the mobile layout
+        card.animate(
+          [
+            { opacity: 0, transform: 'translateY(18px) rotate(' + r + ')' },
+            { opacity: 1, transform: 'translateY(0) rotate(' + r + ')' }
+          ],
+          { duration: 440, delay: 50 + i * 45, easing: 'cubic-bezier(0.22, 0.61, 0.36, 1)', fill: 'backwards' }
+        );
+      } else {
+        const startRot = (rNum + 10) + 'deg';   // extra tilt that settles to --r
+        const endRot = rNum + 'deg';
+        card.animate(
+          [
+            { opacity: 0, transform: 'translateY(34px) scale(0.5) rotate(' + startRot + ')' },
+            { opacity: 1, transform: 'translateY(0) scale(1) rotate(' + endRot + ')' }
+          ],
+          { duration: 620, delay: 90 + i * 65, easing: 'cubic-bezier(0.34, 1.45, 0.5, 1)', fill: 'backwards' }
+        );
+      }
     });
   }
 
