@@ -31,13 +31,15 @@
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const cards = board.querySelectorAll('.bc');
     cards.forEach(function (card, i) {
-      const r = (card.style.getPropertyValue('--r') || '0deg').trim();
+      const rNum = parseFloat(card.style.getPropertyValue('--r')) || 0;
+      const startRot = (rNum + 10) + 'deg';   // extra tilt that settles to --r
+      const endRot = rNum + 'deg';
       card.animate(
         [
-          { opacity: 0, transform: 'translateY(16px) rotate(' + r + ')' },
-          { opacity: 1, transform: 'translateY(0) rotate(' + r + ')' }
+          { opacity: 0, transform: 'translateY(34px) scale(0.5) rotate(' + startRot + ')' },
+          { opacity: 1, transform: 'translateY(0) scale(1) rotate(' + endRot + ')' }
         ],
-        { duration: 500, delay: 80 + i * 55, easing: 'cubic-bezier(0.4, 0, 0.2, 1)', fill: 'backwards' }
+        { duration: 620, delay: 90 + i * 65, easing: 'cubic-bezier(0.34, 1.45, 0.5, 1)', fill: 'backwards' }
       );
     });
   }
