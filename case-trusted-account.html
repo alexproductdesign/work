@@ -46,7 +46,7 @@
       <p class="case-intro">Trusted Shops is a European platform that helps online stores build trust through trustmarks, verified reviews and Buyer Protection. The Trusted Account was meant to be the central touchpoint for consumers – managing protection, writing reviews, interacting with shops. In reality, most users didn't even know they had one.</p>
 
       <dl class="case-facts">
-        <div><dt class="mono">Role</dt><dd>Sole Product Designer</dd></div>
+        <div><dt class="mono">Role</dt><dd>Senior Product Designer</dd></div>
         <div><dt class="mono">Team</dt><dd>PM, engineers, content design</dd></div>
         <div><dt class="mono">Timeline</dt><dd>2024 – 2025</dd></div>
         <div><dt class="mono">Platform</dt><dd>Web · Mobile app</dd></div>
@@ -65,12 +65,12 @@
         <p class="impact-label">User retention – users returning to the app within 14 days</p>
       </div>
       <div class="impact-item">
-        <p class="impact-num serif">≈7×</p>
-        <p class="impact-label">Verified public profile completion rate</p>
-      </div>
-      <div class="impact-item">
         <p class="impact-num serif">≈3×</p>
         <p class="impact-label">Free-to-PLUS subscription conversion</p>
+      </div>
+      <div class="impact-item">
+        <p class="impact-num serif">−24 p.p.</p>
+        <p class="impact-label">Support tickets about opening a Buyer Protection case</p>
       </div>
     </section>
 
@@ -79,8 +79,8 @@
       <p class="case-kicker mono">Problem</p>
       <div class="case-body">
         <h2>Strong B2B adoption, invisible B2C product</h2>
-        <p>Despite strong B2B adoption, the consumer account was underused. Many users didn't realize they had one, engagement was low, and PLUS subscriptions weren't scaling. The product team had always positioned the account as the central hub for trust and engagement – but for most users it simply didn't exist.</p>
-        <p class="case-quote serif">How might we make the account more visible, easier to understand and genuinely useful – so that users see the value and actually want to engage with it?</p>
+        <p>Despite strong B2B adoption, the consumer account was underused. Only ~12% of users returned after first login, profile completion sat under 6%, and fewer than 1% upgraded to the PLUS subscription. Many users didn't realize they had an account at all – including people already paying for PLUS.</p>
+        <p class="case-quote serif">We were selling security, and security was nowhere to be seen in the product.</p>
       </div>
     </section>
 
@@ -88,21 +88,25 @@
     <section class="case-section">
       <p class="case-kicker mono">Research</p>
       <div class="case-body">
-        <h2>Five sources of evidence before a single screen</h2>
-        <p>We had no fresh research, so I built the evidence base myself: user surveys, support tickets, product analytics, internal interviews and a heuristic review of competitors.</p>
+        <h2>Six sources of evidence before a single screen</h2>
+        <p>There was no fresh research, so I built the picture from six inputs: two new studies I ran, and four sources the company already had but nobody had put together.</p>
       </div>
       <div class="insights">
         <div class="insight-card">
           <p class="mono">📝 User surveys</p>
-          <p>Many users didn't know they had an account – even paying PLUS subscribers. Most couldn't name a single PLUS benefit. No understood purpose → no reason to come back.</p>
+          <p>Sent right after people paid for the PLUS subscription. Many didn't know they had an account, most couldn't name a single PLUS benefit. No understood purpose → no reason to come back.</p>
+        </div>
+        <div class="insight-card">
+          <p class="mono">🗣️ 1:1 interviews</p>
+          <p>Open, story-based conversations about buying online safely: goals, needs, pain points, and the words people actually use when they talk about risk.</p>
         </div>
         <div class="insight-card">
           <p class="mono">📨 Support tickets</p>
-          <p>Zendesk tickets showed the same confusion on repeat: how Buyer Protection works, what PLUS includes, and how to submit a claim when an order goes wrong.</p>
+          <p>Zendesk tickets showed the same confusion on repeat: how Buyer Protection works, what PLUS includes, and how to report a problem when an order goes wrong.</p>
         </div>
         <div class="insight-card">
           <p class="mono">📊 Product analytics</p>
-          <p>Only ~12% of users returned after first login. Profile completion and engagement under 10%. Subscription and review conversion each below 1% – reviews happened in emails, not in the account.</p>
+          <p>Only ~12% of users returned after first login. Profile completion under 6%. Subscription and review conversion each below 1% – reviews happened in emails, not in the account.</p>
         </div>
         <div class="insight-card">
           <p class="mono">🤝 Internal interviews</p>
@@ -115,30 +119,70 @@
       </div>
     </section>
 
-    <!-- 6. framing & priorities -->
+    <!-- 6. method -->
     <section class="case-section">
-      <p class="case-kicker mono">Framing</p>
+      <p class="case-kicker mono">Method</p>
       <div class="case-body">
-        <h2>From one big gap to four workable themes</h2>
-        <p>Together with the PM I defined success metrics up front – tracked in GA, Metabase and backend event logs – and broke the opportunity into four themes. Then I mapped the full account journey and turned the research pains into a content-priority matrix.</p>
+        <h2>The framework behind every study I run</h2>
+        <p>I own B2C research here, so every study runs on the same framework – that's what makes results comparable between projects. Interview with open, story-based questions. Debrief the same day, one board per participant. Tag by goals, needs, motivations and pain points, then bring everyone onto one board. Cluster what different people said the same way and count it – the count is what turns a pile of notes into a finding. And a finding only becomes an insight when I can name the why and the consequence.</p>
+      </div>
+      <div class="case-media is-img">
+        <img src="assets/ta-research-board.jpg?v=1" alt="Participant research board with needs, goals, pain points and motivations" loading="lazy">
+      </div>
+    </section>
+
+    <!-- 7. audience -->
+    <section class="case-section">
+      <p class="case-kicker mono">Audience</p>
+      <div class="case-body">
+        <h2>Two audiences, one attitude to risk</h2>
+        <p>The survey told us who our audience actually is; the interviews explained why they behave that way. Two segments carry this product.</p>
       </div>
       <div class="insights">
         <div class="insight-card">
-          <p class="mono">🔎 Visibility &amp; awareness</p>
-          <p>Make the account easy to find and explain in plain words what it is and why it matters.</p>
+          <p class="mono">70% · Segment A · 55+</p>
+          <p>Retirees who shop online carefully. They read the shop page before the product page. The fear is concrete: the money is gone and nobody on the other side is dealing with it.</p>
         </div>
         <div class="insight-card">
-          <p class="mono">✅ Trust &amp; transparency</p>
-          <p>Show credibility with clear Buyer Protection status, verified identities and public profiles.</p>
+          <p class="mono">20% · Segment B · 40–55</p>
+          <p>Family buyers, mostly women, ordering for a household. High order volume, and they are the one who sorts it out when a parcel never arrives.</p>
         </div>
-        <div class="insight-card">
-          <p class="mono">📦 Clarity &amp; self-service</p>
-          <p>Let users quickly check their orders and submit claims without getting lost.</p>
+      </div>
+      <div class="case-body" style="margin-top: 20px">
+        <p class="case-quote serif">They did not grow up with the internet. Telling a trustworthy shop from a fake one is not obvious to them – and many have already been cheated online at least once.</p>
+      </div>
+    </section>
+
+    <!-- 8. reframe -->
+    <section class="case-section">
+      <p class="case-kicker mono">Reframe</p>
+      <div class="case-body">
+        <h2>What we actually sell is peace of mind</h2>
+        <p>Digital security isn't a feature you evaluate on a spec sheet. You buy it like insurance: emotionally, in advance, because the alternative is a feeling you don't want to have. Written as a ladder, in the customer's language:</p>
+      </div>
+      <div class="experiments" style="margin-top: 20px">
+        <div class="experiment-row">
+          <p class="mono">Goal</p>
+          <p>I want to shop online without the fear of losing my money. → Drives the headline and the offer.</p>
         </div>
-        <div class="insight-card">
-          <p class="mono">⭐ Review engagement</p>
-          <p>Give people simple ways to leave reviews right in the account, so participating feels natural.</p>
+        <div class="experiment-row">
+          <p class="mono">Needs</p>
+          <p>Know this order is covered. Know the shop is real. Know how to report a problem and what happens after that. → Drives the sections and the features.</p>
         </div>
+        <div class="experiment-row">
+          <p class="mono">Pains</p>
+          <p>No visible protection status, legal jargon, a hidden claim route, no idea what PLUS includes. → Drives what the redesign has to relieve.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. the brief -->
+    <section class="case-section">
+      <p class="case-kicker mono">The brief</p>
+      <div class="case-body">
+        <h2>From the brief to a content priority</h2>
+        <p class="case-quote serif">How might we make the account visible, understandable and useful – so people see they are protected and act on it?</p>
+        <p>I mapped the full account journey from first entry after purchase through subscription and claims: the research pains turned out to be the structural blockers too. Once the priorities were questions instead of features, the team stopped arguing about taste and started arguing about order of work.</p>
       </div>
       <div class="experiments" style="margin-top: 20px">
         <div class="experiment-row">
@@ -164,13 +208,72 @@
       </div>
     </section>
 
-    <!-- 7. the design -->
+    <!-- 10. success metrics -->
+    <section class="case-section">
+      <p class="case-kicker mono">Success metrics</p>
+      <div class="case-body">
+        <h2>Six metrics, agreed with the PM before anything was drawn</h2>
+        <p>Tracked in GA, Metabase and backend event logs – later Mixpanel, Looker, BigQuery, Zendesk and Hotjar.</p>
+      </div>
+      <div class="experiments labels-wide" style="margin-top: 20px">
+        <div class="experiment-row">
+          <p class="mono">Retention</p>
+          <p>Retention rate – users returning to the app after their first session. The headline metric, and an output rather than something we can act on directly.</p>
+        </div>
+        <div class="experiment-row">
+          <p class="mono">Revenue</p>
+          <p>Subscription conversion – free to paid via the account.</p>
+        </div>
+        <div class="experiment-row">
+          <p class="mono">Engagement</p>
+          <p>Verified public profile completion · monthly review contribution.</p>
+        </div>
+        <div class="experiment-row">
+          <p class="mono">Support cost</p>
+          <p>Tickets for opening a protection case · tickets for understanding the subscription.</p>
+        </div>
+      </div>
+      <div class="case-body" style="margin-top: 20px">
+        <p>A target is a forecast, not a wish. For each metric we took the web version of the product as the baseline, estimated a deliberately conservative improvement from our own past changes and industry benchmarks – target = baseline × (1 + improvement %) – and paired every estimate with a plan to check it, measured the same way before and after launch.</p>
+      </div>
+    </section>
+
+    <!-- 11. trade-offs -->
+    <section class="case-section">
+      <p class="case-kicker mono">Trade-offs</p>
+      <div class="case-body">
+        <h2>Three trade-offs we made to launch</h2>
+        <p>Every launch is a set of deliberate compromises. Reading them before the results makes the results honest.</p>
+      </div>
+      <div class="insights">
+        <div class="insight-card">
+          <p class="mono">Fix the account, not the path to it</p>
+          <p>Checkout, emails, login and registration, and external entry points all belong to other teams. We gained a launch with no cross-team dependencies. It cost us this: people buy PLUS without understanding what they bought – and the one target we missed sits exactly there.</p>
+        </div>
+        <div class="insight-card">
+          <p class="mono">One big redesign, not a series of A/B tests</p>
+          <p>A coherent product and one clear release – all a team this size could run. The cost is attribution: every result below is the effect of the whole package, not of a single change.</p>
+        </div>
+        <div class="insight-card">
+          <p class="mono">Cut order tracking</p>
+          <p>The concept was tested and the final design was done – blocked by technical limitations, not by priority. The launch date held, but the account still can't answer "where is my parcel", the most frequent question of the family segment.</p>
+        </div>
+      </div>
+      <div class="case-body" style="margin-top: 20px">
+        <p>The tracking design that never shipped: delivery status inside the order, and the carrier timeline behind it.</p>
+      </div>
+      <div class="case-media is-img">
+        <img src="assets/ta-cut-tracking.jpg?v=1" alt="Order tracking design that was cut: delivery status in the order and carrier timeline" loading="lazy">
+      </div>
+    </section>
+
+    <!-- 12. the design -->
     <section class="case-section">
       <p class="case-kicker mono">Design</p>
       <div class="case-body">
         <h2>From workshops and wireframes to a gradual launch</h2>
-        <p>I started with cross-functional workshops – product, support, legal and management – to align on goals and surface edge cases early. From there: user journeys and entry points for protection, profiles, subscriptions, reviews and orders; low-fi wireframes; quick prototypes to test flows like submitting a claim or upgrading to PLUS.</p>
-        <p>For the final designs I worked closely with engineers, the PM and content design. We reused design-system components, added scalable patterns like protection badges and profile cards, and tested for accessibility and responsiveness with QA. We launched gradually – German mobile users first, then the other markets.</p>
+        <p>I started with cross-functional workshops – product, support, legal and management – to align on goals and surface edge cases early. From there: user journeys and entry points for protection, profiles, subscriptions, reviews and orders; low-fi wireframes; quick prototypes to test flows like submitting a claim or upgrading to PLUS. Before launch we ran usability tests on the main flows.</p>
+        <p>For the final designs I worked closely with engineers, the PM and content design. We reused design-system components, added scalable patterns like protection badges and profile cards, and tested for accessibility and responsiveness with QA – which matters more than usual when a large share of your audience is 55+. We launched gradually – German mobile users first, then the other markets.</p>
       </div>
       <div class="case-media is-img">
         <img src="assets/ta-design-alerts-orders.jpg?v=2" alt="Proactive alerts and order cards with post-purchase statuses" loading="lazy">
@@ -183,13 +286,13 @@
       </div>
     </section>
 
-    <!-- 8. outcome -->
+    <!-- 13. outcome -->
     <section class="case-section">
       <p class="case-kicker mono">Outcome</p>
       <div class="case-body">
-        <h2>From hidden feature to a product users care about</h2>
+        <h2>Five of six targets met</h2>
         <p>We launched the redesigned account in December 2024 and started tracking results right away. Retention grew by 11 p.p., verified profile completion jumped 63 p.p., subscription conversion rose 1.8 p.p., and support tickets about opening a Buyer Protection case dropped 24 p.p.</p>
-        <p>Not everything hit target – reviews inside the account grew only 6 p.p. and subscription-related tickets fell just 10 p.p. Hotjar research showed the product value still isn't clear enough for users coming from external channels; that's the next iteration.</p>
+        <p>Not everything hit target – reviews inside the account grew only 6 p.p. and subscription-related tickets fell just 10 p.p. People who met PLUS inside the account understood it; people who met it in a checkout or an email often didn't, and cancelled within days. That's a value-communication problem before the account – and the next iteration.</p>
         <p>This work mixed research with teamwork and led to real results. It also pushed me into a more strategic role – where design choices shape both the user experience and the business.</p>
       </div>
       <div class="case-media is-img">
