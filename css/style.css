@@ -1578,7 +1578,7 @@ a { color: inherit; text-decoration: none; }
 /* hero E: centered poster */
 .hero-poster .case-hero { display: block; text-align: center; max-width: none; }
 .hero-poster .case-title {
-  font-size: clamp(44px, 8.6vw, 112px);
+  font-size: clamp(40px, 6.5vw, 84px);
   line-height: 0.98;
   letter-spacing: -0.035em;
   max-width: 1000px;
