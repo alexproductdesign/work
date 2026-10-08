@@ -1595,3 +1595,17 @@ a { color: inherit; text-decoration: none; }
   .layout-split .case-kicker { margin-bottom: 15px; }
   .layout-split .case-body h2 { line-height: 1.3; }
 }
+
+/* insight cards: fill the row for any card count */
+.insights:has(> .insight-card:nth-child(2):last-child),
+.insights:has(> .insight-card:nth-child(4):last-child) { grid-template-columns: repeat(2, 1fr); }
+.insights:has(> .insight-card:nth-child(5):last-child) { grid-template-columns: repeat(6, 1fr); }
+.insights:has(> .insight-card:nth-child(5):last-child) > .insight-card { grid-column: span 2; }
+.insights:has(> .insight-card:nth-child(5):last-child) > .insight-card:nth-child(n+4) { grid-column: span 3; }
+@media (max-width: 860px) {
+  .insights:has(> .insight-card:nth-child(2):last-child),
+  .insights:has(> .insight-card:nth-child(4):last-child),
+  .insights:has(> .insight-card:nth-child(5):last-child) { grid-template-columns: 1fr; }
+  .insights:has(> .insight-card:nth-child(5):last-child) > .insight-card,
+  .insights:has(> .insight-card:nth-child(5):last-child) > .insight-card:nth-child(n+4) { grid-column: auto; }
+}
