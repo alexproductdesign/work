@@ -1592,6 +1592,6 @@ a { color: inherit; text-decoration: none; }
 
 /* tighter gap between section pill and title */
 @media (min-width: 861px) {
-  .layout-split .case-kicker { margin-bottom: 8px; }
-  .layout-split .case-body h2 { line-height: 1.2; }
+  .layout-split .case-kicker { margin-bottom: 15px; }
+  .layout-split .case-body h2 { line-height: 1.3; }
 }
