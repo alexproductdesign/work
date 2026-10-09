@@ -1876,3 +1876,9 @@ a { color: inherit; text-decoration: none; }
   .layout-split .section-center .story-body { grid-column: 2; grid-row: 2; }
   .layout-split .section-center .story-body > p:first-child { margin-top: 0; }
 }
+
+/* try: section titles without the pill above them (one case) */
+@media (min-width: 861px) {
+  .no-pills .case-kicker { display: none; }
+  .no-pills .case-body h2 { grid-row: 1; }
+}
