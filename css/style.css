@@ -1882,3 +1882,8 @@ a { color: inherit; text-decoration: none; }
   .no-pills .case-kicker { display: none; }
   .no-pills .case-body h2 { grid-row: 1; }
 }
+
+/* research inputs: plain two-column list, no cards */
+.insights.insights-plain { grid-template-columns: 1fr 1fr; gap: 0 48px; }
+.insights-plain .insight-card { background: none; border-radius: 0; padding: 24px 0; border-top: 1px solid var(--line); }
+@media (max-width: 860px) { .insights.insights-plain { grid-template-columns: 1fr; } }
