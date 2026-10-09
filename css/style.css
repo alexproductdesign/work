@@ -21,7 +21,7 @@
 :root {
   --bg: #FAF9F6;
   --ink: #101012;
-  --ink-soft: #6b6b70;
+  --ink-soft: rgba(16, 16, 18, 0.8);
   --card: #ffffff;
   --line: #e8e6e1;
   --yellow: #FFD447;
@@ -1281,7 +1281,7 @@ a { color: inherit; text-decoration: none; }
 .res-none { color: #cfccc2; }
 .res.rs-win  { background: #E1FF53; color: #101012; font-weight: 500; }
 .res.rs-loss { background: #101012; color: #fff; }
-.res.rs-eq   { background: #eceae4; color: #6b6b70; }
+.res.rs-eq   { background: #eceae4; color: rgba(16, 16, 18, 0.8); }
 
 /* ============ motion: reveal / wipe / underline / blink ============ */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s cubic-bezier(0.22,0.61,0.36,1), transform 0.6s cubic-bezier(0.22,0.61,0.36,1); }
