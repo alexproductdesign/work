@@ -37,10 +37,10 @@
   tip.className = 'view-tip';
   tip.innerHTML =
     '<svg viewBox="0 0 24 24" aria-hidden="true">' +
-    '<ellipse cx="8.6" cy="12" rx="4.3" ry="5.6" fill="#ffffff"/>' +
-    '<ellipse cx="15.4" cy="12" rx="4.3" ry="5.6" fill="#ffffff"/>' +
-    '<circle cx="9.8" cy="12.8" r="1.7" fill="#101012"/>' +
-    '<circle cx="16.6" cy="12.8" r="1.7" fill="#101012"/>' +
+    '<ellipse cx="7.4" cy="12" rx="4" ry="5.6" fill="#ffffff"/>' +
+    '<ellipse cx="16.6" cy="12" rx="4" ry="5.6" fill="#ffffff"/>' +
+    '<circle cx="8.6" cy="12.8" r="1.7" fill="#101012"/>' +
+    '<circle cx="17.8" cy="12.8" r="1.7" fill="#101012"/>' +
     '</svg>';
   document.body.appendChild(tip);
 
