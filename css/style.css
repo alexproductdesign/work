@@ -209,10 +209,10 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero-statement em {
-  font-family: "Instrument Serif", Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: inherit;
+  letter-spacing: inherit;
 }
 
 .hero-sub {
@@ -1729,7 +1729,7 @@ a { color: inherit; text-decoration: none; }
 
 /* split layout: even spacing around lists/cards/text (inline margins on a display:contents wrapper are ignored) */
 @media (min-width: 861px) {
-  .layout-split .case-section > .experiments[style] { margin-top: 14px !important; }
+  .layout-split .case-section > .experiments[style] { margin-top: 10px !important; }
   .layout-split .case-section > :not(.case-kicker) + .case-body > p:first-of-type { margin-top: 28px; }
 }
 
@@ -1744,3 +1744,49 @@ a { color: inherit; text-decoration: none; }
   color: var(--ink);
 }
 .story-tag.is-loss { color: #ffffff; }
+
+/* section pills: a bit bolder, tighter tracking */
+.case-kicker { font-weight: 500; letter-spacing: 0.05em; padding-left: 12px; padding-right: 12px; }
+
+/* how-might-we list in a beige box, same as statement cards */
+.case-list.hmw-box {
+  list-style: none;
+  padding: 22px 26px;
+  margin: 28px 0 6px;
+  background: #F0EDE6;
+  border-radius: 16px;
+  gap: 12px;
+}
+.case-list.hmw-box li {
+  display: flex;
+  gap: 10px;
+  max-width: none;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+.case-list.hmw-box li::before { content: "✨"; flex: none; }
+
+/* cards and statement boxes: 20px padding all around, 10px radius */
+.insight-card,
+.experiment-row,
+.experiment-row:not(:has(> :nth-child(3))),
+.case-body .case-quote,
+.case-list.hmw-box {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* payment form experiments: more air between header, stories and screenshots */
+@media (min-width: 861px) {
+  .layout-split .section-center .case-body > h2 { margin-bottom: 72px; }
+  .layout-split .section-center.case-section > .story { margin-top: 0; }
+  .layout-split.case .section-center.case-section > .story-media { margin: 48px 0 96px; }
+}
+
+/* statement box: even gap to the text that follows */
+.case-body .case-quote { margin-bottom: 24px; }
+
+/* related cards sit close together */
+.experiments { gap: 8px; }
+.insights { gap: 8px; }
