@@ -1790,3 +1790,37 @@ a { color: inherit; text-decoration: none; }
 /* related cards sit close together */
 .experiments { gap: 8px; }
 .insights { gap: 8px; }
+
+/* ============ type system ============
+   weights: 400 text, 500 labels/numbers/titles, 600 section headings only
+   tracking: caps 0.05em, display -0.03em, headings -0.01em, text 0
+   sizes: 13 caps labels, 14 secondary, 16 text */
+.mono, .nav-link { letter-spacing: 0.05em; }
+.mono { font-size: 13px; }
+.impact-num, .result-name { font-weight: 500; }
+.case-title, .impact-num, .result-num { letter-spacing: -0.03em; }
+.story p, .case-list li, .table-intro p { font-size: 16px; }
+.result-note { font-size: 14px; }
+.hero-poster .case-title { letter-spacing: -0.03em; }
+.result-num span, .result-big span { font-size: 16px; }
+.nav-link { font-size: 13px; }
+.copy-email { font-size: 16px; }
+
+/* next-project title and footer title: same size, weight and tracking */
+.case-next-name, .dome-title {
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.case-next-name { margin-top: 10px; }
+.dome-title { margin-bottom: 30px; }
+
+/* bold inline text and small table/step text follow the same scale */
+.case strong, .case b { font-weight: 500; }
+.st, .res { font-size: 14px; }
+.exp-pattern { font-size: 13px; }
+.exp-table thead th, .scroll-cue { font-size: 13px; letter-spacing: 0.05em; }
+.process-step .p-num { font-size: 13px; font-weight: 500; }
+.process-step h3 { font-size: 16px; font-weight: 500; }
+.process-step p { font-size: 16px; }
