@@ -1887,3 +1887,42 @@ a { color: inherit; text-decoration: none; }
 .insights.insights-plain { grid-template-columns: 1fr 1fr; gap: 0 48px; }
 .insights-plain .insight-card { background: none; border-radius: 0; padding: 24px 0; border-top: 1px solid var(--line); }
 @media (max-width: 860px) { .insights.insights-plain { grid-template-columns: 1fr; } }
+
+/* audience segments: big share figures, no cards */
+.segments { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
+.segment { border-top: 1px solid var(--line); padding: 24px 0; }
+.segment p { margin: 0; }
+.segment-num { font-size: clamp(48px, 5.2vw, 68px); font-weight: 500; letter-spacing: -0.03em; line-height: 1; }
+.segment-name { font-weight: 500; margin: 12px 0 8px !important; }
+.segment-text { color: var(--ink-soft); }
+@media (max-width: 860px) { .segments { grid-template-columns: 1fr; } }
+
+/* goal / needs / pains: pill label + text, no cards */
+.ladder { margin-top: 24px; }
+.ladder-row { display: grid; grid-template-columns: 140px 1fr; gap: 24px; border-top: 1px solid var(--line); padding: 24px 0; }
+.ladder-row p { margin: 0; }
+.ladder-drives { color: var(--ink-soft); margin-top: 8px !important; }
+.label-pill { display: inline-flex; align-self: start; justify-self: start; padding: 6px 13px; border-radius: 999px; background: #F2F1ED; font-weight: 500; color: var(--ink); }
+@media (max-width: 860px) { .ladder-row { grid-template-columns: 1fr; gap: 12px; } }
+
+/* success metrics: large category name + description, no cards */
+.metrics { margin-top: 24px; }
+.metric-row { display: grid; grid-template-columns: 200px 1fr; gap: 24px; border-top: 1px solid var(--line); padding: 24px 0; }
+.metric-row p { margin: 0; }
+.metric-name { font-size: clamp(22px, 2.4vw, 28px); font-weight: 500; letter-spacing: -0.01em; line-height: 1.2; }
+.metrics + .case-body { margin-top: 24px; }
+@media (max-width: 860px) { .metric-row { grid-template-columns: 1fr; gap: 8px; } }
+
+/* trade-offs table: decision, gained, cost */
+.tt { margin-top: 24px; }
+.tt p { margin: 0; }
+.tt-head, .tt-row { display: grid; grid-template-columns: 1.1fr 1fr 1.2fr; gap: 24px; }
+.tt-head { color: var(--ink-soft); padding-bottom: 12px; }
+.tt-row { border-top: 1px solid var(--line); padding: 24px 0; }
+.tt-title { font-weight: 500; margin-bottom: 8px !important; }
+.tt-sub { color: var(--ink-soft); }
+@media (max-width: 860px) {
+  .tt-head { display: none; }
+  .tt-row { grid-template-columns: 1fr; gap: 16px; }
+  .tt-cell[data-label]:not(:first-child)::before { content: attr(data-label); display: block; color: var(--ink-soft); margin-bottom: 4px; }
+}
