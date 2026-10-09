@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preload" href="fonts/OverusedGrotesk-VF.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20261010v">
+  <link rel="stylesheet" href="css/style.css?v=20261011n">
 </head>
 <body class="theme-ivory">
 
@@ -62,7 +62,7 @@
     <section class="case-impact">
       <div class="impact-item">
         <p class="impact-num serif">100%</p>
-        <p class="impact-label">Of validation participants could instantly tell new applications from reviewed ones – the platform's #1 pain point</p>
+        <p class="impact-label">Of validation participants could instantly tell new applications from reviewed ones: the platform's #1 pain point</p>
       </div>
       <div class="impact-item">
         <p class="impact-num serif">5</p>
@@ -93,26 +93,26 @@
         <h2>Understanding the problem</h2>
         <p>I planned and ran remote, task-based usability tests with institute staff: reviewing new applications, uploading results, contacting applicants, approving certifications. Five problems showed up again and again:</p>
       </div>
-      <div class="insights">
+      <div class="insights insights-plain">
         <div class="insight-card">
-          <p class="mono">🚪 Unclear navigation</p>
-          <p>Staff clicked into old cases by mistake – new and already-reviewed applications weren't clearly separated.</p>
+          <p class="mono">Unclear navigation</p>
+          <p>Staff clicked into old cases by mistake, because new and already-reviewed applications weren't clearly separated.</p>
         </div>
         <div class="insight-card">
-          <p class="mono">📤 Hidden actions</p>
-          <p>"I thought I still had to email the results" – the upload action was so buried that users didn't believe it existed.</p>
+          <p class="mono">Hidden actions</p>
+          <p>"I thought I still had to email the results": the upload action was so buried that users didn't believe it existed.</p>
         </div>
         <div class="insight-card">
-          <p class="mono">🔄 No feedback</p>
+          <p class="mono">No feedback</p>
           <p>After critical actions the system stayed silent. Users clicked twice or more, unsure whether anything had worked.</p>
         </div>
         <div class="insight-card">
-          <p class="mono">✉️ Broken communication</p>
-          <p>No built-in way to message applicants – staff copied email addresses manually and finished tasks outside the system.</p>
+          <p class="mono">Broken communication</p>
+          <p>No built-in way to message applicants: staff copied email addresses manually and finished tasks outside the system.</p>
         </div>
         <div class="insight-card">
-          <p class="mono">📑 Inefficient workflows</p>
-          <p>The application list was described as "overwhelming" – staff struggled to scan it and prioritize their day.</p>
+          <p class="mono">Inefficient workflows</p>
+          <p>The application list was described as "overwhelming": staff struggled to scan it and prioritize their day.</p>
         </div>
       </div>
     </section>
@@ -139,26 +139,26 @@
         <h2>Defining success</h2>
         <p>The old platform had no analytics at all – nobody could say how well it worked. So alongside the redesign I proposed the platform's first success metrics:</p>
       </div>
-      <div class="experiments">
-        <div class="experiment-row">
-          <p class="mono">01</p>
-          <p><strong>Task completion rate.</strong> How many users finish uploads and approvals without getting stuck.</p>
+      <div class="metrics">
+        <div class="metric-row">
+          <p class="metric-name">Task completion rate</p>
+          <p class="metric-text">How many users finish uploads and approvals without getting stuck.</p>
         </div>
-        <div class="experiment-row">
-          <p class="mono">02</p>
-          <p><strong>Time on task.</strong> How long it takes to review and certify an application.</p>
+        <div class="metric-row">
+          <p class="metric-name">Time on task</p>
+          <p class="metric-text">How long it takes to review and certify an application.</p>
         </div>
-        <div class="experiment-row">
-          <p class="mono">03</p>
-          <p><strong>System usage.</strong> Whether staff use built-in messaging instead of switching to email.</p>
+        <div class="metric-row">
+          <p class="metric-name">System usage</p>
+          <p class="metric-text">Whether staff use built-in messaging instead of switching to email.</p>
         </div>
-        <div class="experiment-row">
-          <p class="mono">04</p>
-          <p><strong>Drop-off rate.</strong> How often people start but don't finish key flows.</p>
+        <div class="metric-row">
+          <p class="metric-name">Drop-off rate</p>
+          <p class="metric-text">How often people start but don't finish key flows.</p>
         </div>
-        <div class="experiment-row">
-          <p class="mono">05</p>
-          <p><strong>Support tickets.</strong> The number of requests caused by usability issues.</p>
+        <div class="metric-row">
+          <p class="metric-name">Support tickets</p>
+          <p class="metric-text">The number of requests caused by usability issues.</p>
         </div>
       </div>
     </section>
@@ -169,10 +169,10 @@
       <div class="case-body">
         <h2>Designing around daily work</h2>
         <p>I sketched flows, built wireframes and moved to high-fidelity prototypes structured around how staff actually work through their day. The key choices:</p>
-        <ul class="case-list">
+        <ul class="case-list hmw-box">
           <li>New applications highlighted in the list, so staff spot them right away</li>
           <li>Upload moved to the surface, with clear confirmation after every step</li>
-          <li>A simplified approval flow with direct status feedback – "Approved", "Pending"</li>
+          <li>A simplified approval flow with direct status feedback: "Approved", "Pending"</li>
           <li>A built-in communication panel, cutting out the copy-paste email workaround</li>
         </ul>
         <p style="margin-top: 18px">The redesign was two-sided by design. The same status model that gave staff clear feedback also powers the beekeeper's view: applicants see where their application stands – submitted, in review, approved – without writing a single email, and messages from the institute reach them inside the platform, next to the application they're about.</p>
@@ -209,8 +209,12 @@
 
     <!-- next -->
     <a class="case-next" href="case-trusted-account.html">
-      <p class="mono">Next project</p>
-      <p class="case-next-name serif">Trusted Account <span class="next-arrow">→</span></p>
+      <span class="next-thumb"><img src="assets/ta-cover.jpg?v=3" alt="" loading="lazy"></span>
+      <span class="next-text">
+        <span class="next-label">Next project</span>
+        <span class="case-next-name">Trusted account</span>
+      </span>
+      <span class="next-go" aria-hidden="true">→</span>
     </a>
 
   </main>

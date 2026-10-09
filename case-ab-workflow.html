@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preload" href="fonts/OverusedGrotesk-VF.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20261010v">
+  <link rel="stylesheet" href="css/style.css?v=20261011n">
 </head>
 <body class="theme-ivory">
 
@@ -60,8 +60,8 @@
     <!-- 3. impact strip -->
     <section class="case-impact">
       <div class="impact-item">
-        <p class="impact-num serif">–85%</p>
-        <p class="impact-label">Cycle time – idea to live test: two weeks → two days</p>
+        <p class="impact-num serif">85%</p>
+        <p class="impact-label">Shorter cycle time: idea to live test, two weeks → two days</p>
       </div>
       <div class="impact-item">
         <p class="impact-num serif">No devs</p>
@@ -69,7 +69,7 @@
       </div>
       <div class="impact-item">
         <p class="impact-num serif">Org-wide</p>
-        <p class="impact-label">Adoption – the workflow spread beyond my team</p>
+        <p class="impact-label">Adoption: the workflow spread beyond my team</p>
       </div>
     </section>
 
@@ -101,8 +101,16 @@
       <p class="case-kicker mono">Method</p>
       <div class="case-body">
         <h2>How the new workflow works</h2>
-        <p><strong>Templates.</strong> Rather than letting everyone generate a random version of a page per test, I built 1:1 replicas of our live pages as Figma Make templates. Each one bakes in the instructions that keep output consistent: automatic test naming, export conventions, role awareness – and a prompt that makes Figma Make export pure HTML and CSS for Kameleoon, our A/B testing tool, instead of its default React. Only I manage the templates; everyone else works inside them. That's what keeps a fast workflow from turning into a mess.</p>
-        <p><strong>The 80% rule.</strong> In experimentation, speed of learning matters more than pixel perfection. So we ship at a minimum of 80% brand compliance after designer QA – enough that nothing embarrassing goes out – and refine the winners to 100% before they roll out for good. The 80 isn't a corner cut under pressure; it's a deliberate gate, monitored daily.</p>
+      </div>
+      <div class="metrics">
+        <div class="metric-row">
+          <p class="metric-name">Templates</p>
+          <p class="metric-text">Rather than letting everyone generate a random version of a page per test, I built 1:1 replicas of our live pages as Figma Make templates. Each one bakes in the instructions that keep output consistent: automatic test naming, export conventions, role awareness – and a prompt that makes Figma Make export pure HTML and CSS for Kameleoon, our A/B testing tool, instead of its default React. Only I manage the templates; everyone else works inside them. That's what keeps a fast workflow from turning into a mess.</p>
+        </div>
+        <div class="metric-row">
+          <p class="metric-name">The 80% rule</p>
+          <p class="metric-text">In experimentation, speed of learning matters more than pixel perfection. So we ship at a minimum of 80% brand compliance after designer QA – enough that nothing embarrassing goes out – and refine the winners to 100% before they roll out for good. The 80 isn't a corner cut under pressure; it's a deliberate gate, monitored daily.</p>
+        </div>
       </div>
       <div class="case-media is-img">
         <img src="assets/aw-pipeline.svg" alt="The 80% brand-compliance gate: ship at eighty, refine winners to one hundred" loading="lazy">
@@ -126,26 +134,30 @@
       <div class="case-body">
         <h2>Next steps</h2>
       </div>
-      <div class="experiments">
-        <div class="experiment-row">
-          <p class="mono">Next</p>
-          <p>Moving the pipeline onto Claude: repo access anchors templates to the real codebase, and it writes native HTML and CSS – exactly what Kameleoon needs.</p>
+      <div class="ladder">
+        <div class="ladder-row">
+          <span class="label-pill">Next 1</span>
+          <p><strong>Moving the pipeline onto Claude:</strong> repo access anchors templates to the real codebase, and it writes native HTML and CSS, exactly what Kameleoon needs.</p>
         </div>
-        <div class="experiment-row">
-          <p class="mono">Next</p>
-          <p>Measure the pipeline: tests per quarter, time-to-live and win rate would turn the –85% from an estimate into a tracked metric.</p>
+        <div class="ladder-row">
+          <span class="label-pill">Next 2</span>
+          <p><strong>Measure the pipeline:</strong> tests per quarter, time-to-live and win rate would turn the 85% cut from an estimate into a tracked metric.</p>
         </div>
-        <div class="experiment-row">
-          <p class="mono">Next</p>
-          <p>A template contribution model: today I'm the only one who builds templates – a clean bottleneck, but still a bottleneck.</p>
+        <div class="ladder-row">
+          <span class="label-pill">Next 3</span>
+          <p><strong>A template contribution model:</strong> today I'm the only one who builds templates, a clean bottleneck, but still a bottleneck.</p>
         </div>
       </div>
     </section>
 
     <!-- 9. next project -->
     <a class="case-next" href="case-smart-insights.html">
-      <p class="mono">Next project</p>
-      <p class="case-next-name serif">Smart Insights <span class="next-arrow">→</span></p>
+      <span class="next-thumb"><img src="assets/si-cover.jpg?v=2" alt="" loading="lazy"></span>
+      <span class="next-text">
+        <span class="next-label">Next project</span>
+        <span class="case-next-name">Smart insights</span>
+      </span>
+      <span class="next-go" aria-hidden="true">→</span>
     </a>
 
   </main>

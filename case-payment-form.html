@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preload" href="fonts/OverusedGrotesk-VF.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20261010v">
+  <link rel="stylesheet" href="css/style.css?v=20261011n">
 </head>
 <body class="theme-ivory">
 
@@ -61,7 +61,7 @@
     <section class="case-impact">
       <div class="impact-item">
         <p class="impact-num serif">≈2×</p>
-        <p class="impact-label">Conversion rate on the payment form – from ~6% in 2023 to ~13% in 2026</p>
+        <p class="impact-label">Conversion rate on the payment form: from ~6% in 2023 to ~13% in 2026</p>
       </div>
       <div class="impact-item">
         <p class="impact-num serif">86</p>
@@ -87,41 +87,26 @@
         <h2>Making experiments part of the process</h2>
         <p>I turned the scattered stream of ideas – from stakeholders, C-level, legal, my own audits – into a repeatable design process:</p>
       </div>
-      <div class="process-list">
-        <div class="process-step">
-          <span class="p-num">01</span>
-          <div>
-            <h3>Structured hypotheses</h3>
-            <p>Every hypothesis in the same format: we observe X → by changing Y → metric Z moves by N%. No hypothesis, no experiment. This forced every idea (including the HiPPO ones) through the same gate.</p>
-          </div>
+      <div class="metrics">
+        <div class="metric-row">
+          <p class="metric-name">Structured hypotheses</p>
+          <p class="metric-text">Every hypothesis in the same format: we observe X → by changing Y → metric Z moves by N%. No hypothesis, no experiment. This forced every idea (including the HiPPO ones) through the same gate.</p>
         </div>
-        <div class="process-step">
-          <span class="p-num">02</span>
-          <div>
-            <h3>Behavior patterns as design rationale</h3>
-            <p>I grounded variants in consumer psychology – Paradox of Choice, Social Proof, Serial Position Effect, Goal Gradient, Picture Superiority – and tagged each experiment with the pattern it tested. Design decisions became arguable and teachable, not "looks better to me".</p>
-          </div>
+        <div class="metric-row">
+          <p class="metric-name">Behavior patterns as design rationale</p>
+          <p class="metric-text">I grounded variants in consumer psychology (Paradox of Choice, Social Proof, Serial Position Effect, Goal Gradient, Picture Superiority) and tagged each experiment with the pattern it tested. Design decisions became arguable and teachable, not "looks better to me".</p>
         </div>
-        <div class="process-step">
-          <span class="p-num">03</span>
-          <div>
-            <h3>Prioritization</h3>
-            <p>With limited traffic, we could only run so many tests. I prioritized by expected impact, effort and learning value – and killed ideas that couldn't articulate a hypothesis.</p>
-          </div>
+        <div class="metric-row">
+          <p class="metric-name">Prioritization</p>
+          <p class="metric-text">With limited traffic, we could only run so many tests. I prioritized by expected impact, effort and learning value, and killed ideas that couldn't articulate a hypothesis.</p>
         </div>
-        <div class="process-step">
-          <span class="p-num">04</span>
-          <div>
-            <h3>Device-level analysis</h3>
-            <p>With two-thirds of traffic on mobile, I reviewed every result split by device. Several experiments won on one device and lost on the other – shipping the aggregate would have destroyed value.</p>
-          </div>
+        <div class="metric-row">
+          <p class="metric-name">Device-level analysis</p>
+          <p class="metric-text">With two-thirds of traffic on mobile, I reviewed every result split by device. Several experiments won on one device and lost on the other, so shipping the aggregate would have destroyed value.</p>
         </div>
-        <div class="process-step">
-          <span class="p-num">05</span>
-          <div>
-            <h3>Documented learnings</h3>
-            <p>Wins and losses were written down with equal care. The learning library became input for the next round of hypotheses – and onboarding material for new team members.</p>
-          </div>
+        <div class="metric-row">
+          <p class="metric-name">Documented learnings</p>
+          <p class="metric-text">Wins and losses were written down with equal care. The learning library became input for the next round of hypotheses and onboarding material for new team members.</p>
         </div>
       </div>
     </section>
@@ -247,22 +232,22 @@
         <h2>Lessons from three years of testing</h2>
         <p>Over three years I redesigned the program as much as the page:</p>
       </div>
-      <div class="experiments labels-wide">
-        <div class="experiment-row">
-          <p class="mono">Guardrails</p>
-          <p>Flickering in above-the-fold tests, broken shop logos tanking conversion for individual shops, legal reviews happening too late – each incident became a checklist item applied to future experiment designs.</p>
+      <div class="metrics">
+        <div class="metric-row">
+          <p class="metric-name">Guardrails</p>
+          <p class="metric-text">Flickering in above-the-fold tests, broken shop logos tanking conversion for individual shops, legal reviews happening too late: each incident became a checklist item applied to future experiment designs.</p>
         </div>
-        <div class="experiment-row">
-          <p class="mono">Stakeholders</p>
-          <p>Legal and localization moved from post-hoc reviewers to pre-launch participants.</p>
+        <div class="metric-row">
+          <p class="metric-name">Stakeholders</p>
+          <p class="metric-text">Legal and localization moved from post-hoc reviewers to pre-launch participants.</p>
         </div>
-        <div class="experiment-row">
-          <p class="mono">Prototyping</p>
-          <p>For later experiments I used AI-assisted prototyping (Figma Make) to test concepts like comparison tables without dev support – then rebuilt winners properly in the design system for rollout.</p>
+        <div class="metric-row">
+          <p class="metric-name">Prototyping</p>
+          <p class="metric-text">For later experiments I used AI-assisted prototyping (Figma Make) to test concepts like comparison tables without dev support, then rebuilt winners properly in the design system for rollout.</p>
         </div>
-        <div class="experiment-row">
-          <p class="mono">Tooling</p>
-          <p>Migration from AB Tasty to Kameleoon without losing the experiment history or comparability.</p>
+        <div class="metric-row">
+          <p class="metric-name">Tooling</p>
+          <p class="metric-text">Migration from AB Tasty to Kameleoon without losing the experiment history or comparability.</p>
         </div>
       </div>
       <!-- hidden for now: <div class="case-media" style="margin-top: 40px"><span>The form over the years: 2023 → 2024 → 2025 → 2026</span></div> -->
@@ -284,8 +269,12 @@
 
     <!-- next -->
     <a class="case-next" href="case-honey.html">
-      <p class="mono">Next project</p>
-      <p class="case-next-name serif">Honey Certification <span class="next-arrow">→</span></p>
+      <span class="next-thumb"><img src="assets/honey-cover.jpg" alt="" loading="lazy"></span>
+      <span class="next-text">
+        <span class="next-label">Next project</span>
+        <span class="case-next-name">Honey certification</span>
+      </span>
+      <span class="next-go" aria-hidden="true">→</span>
     </a>
 
   </main>
