@@ -1827,3 +1827,42 @@ a { color: inherit; text-decoration: none; }
 
 /* headings: weight 500 everywhere (no 600) */
 .case-body h2, .story h3, .layout-split .section-center .story h3 { font-weight: 500; }
+
+/* ============ spacing + radius scale (case pages) ============
+   spacing: 8 related items, 16 inside a block, 24 between blocks, 48 between parts, 96 between sections
+   radius: 10 cards and boxes, 20 large containers, pills fully round */
+.case-section { margin-top: 96px; }
+.case-body p { margin-bottom: 16px; }
+.case-kicker { margin-bottom: 16px; }
+.case-body h2 { margin-bottom: 16px; }
+.case-body { margin-bottom: 48px; }
+.case-media + .case-media { margin-top: 24px; }
+.case-media-pair { gap: 24px; margin-top: 24px; }
+.case-impact { margin: 48px 0; padding: 48px 0; }
+.case-media, .case-media.is-img, .table-scroll-frame, .case-next { border-radius: 20px; }
+.hero-poster .case-title { margin: 24px auto 24px; }
+.hero-poster .case-facts { margin-top: 24px; }
+.story-tags { margin-bottom: 16px; }
+.story h3 { margin-bottom: 16px; }
+.story p { margin-bottom: 16px; }
+.result-row { padding: 24px 0; }
+.case-quote, .case-body .case-quote { margin-top: 24px; margin-bottom: 24px; }
+.case-list.hmw-box { margin-top: 24px; margin-bottom: 24px; }
+@media (min-width: 861px) {
+  .layout-split .case-section > .experiments[style] { margin-top: 8px !important; }
+  .layout-split .case-section > :not(.case-kicker) + .case-body > p:first-of-type { margin-top: 24px; }
+  .layout-split .section-center .case-body > h2 { margin-bottom: 48px; }
+  .layout-split.case .section-center.case-section > .story-media { margin: 48px 0 96px; }
+  .layout-split .section-center.case-section > .story { margin-top: 0; }
+}
+.impact-num { margin-bottom: 8px; }
+.case-next-name { margin-top: 8px; }
+.insight-card .mono, .experiment-row .mono { margin-bottom: 8px; }
+.layout-split .case-kicker { margin-bottom: 16px; }
+.case-body[style] { margin-top: 24px !important; }
+.layout-split.case .case-section > .case-media { margin-top: 24px; }
+.results-board { margin-bottom: 48px; }
+.case-media-hero { margin-top: 48px; }
+.table-scroll, .layout-split.case .case-section > .table-scroll { margin-top: 24px; }
+.case-list { margin-top: 24px; }
+.case-media.is-img[style] { margin-top: 48px !important; }
