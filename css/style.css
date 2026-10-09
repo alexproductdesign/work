@@ -1732,3 +1732,15 @@ a { color: inherit; text-decoration: none; }
   .layout-split .case-section > .experiments[style] { margin-top: 14px !important; }
   .layout-split .case-section > :not(.case-kicker) + .case-body > p:first-of-type { margin-top: 28px; }
 }
+
+/* labels: sentence case, body size, one step bolder, near-black (section pills keep their original caps style) */
+.insight-card .mono,
+.experiment-row .mono,
+.story-tag {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.story-tag.is-loss { color: #ffffff; }
